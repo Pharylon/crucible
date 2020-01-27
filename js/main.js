@@ -1,45 +1,29 @@
-import { articleList } from "./list.js";
 import { hideMenu } from "./menu-button.js";
 async function main() {
     if (window.location.hash && window.location.hash.length > 1) {
         await loadFromHash();
     }
-    setMenuItems("menu-items");
-    setMenuItems("menu-button-items");
-}
-function setMenuItems(menuId) {
-    const menuItems = document.getElementById(menuId);
-    if (menuItems) {
-        menuItems.innerText = "";
-        menuItems.appendChild(getLinkItem("Home", "#"));
-        articleList.map((a) => {
-            const li = getLinkItem(a.name);
-            menuItems.appendChild(li);
-        });
+    else{
+        console.log("Nav home from main");
+        navigateHome();
     }
 }
-function getLinkItem(name, link) {
-    const a = document.createElement("a");
-    a.href = link || ("#/" + getSafeTitle(name));
-    a.innerText = name;
-    const li = document.createElement("li");
-    li.appendChild(a);
-    return li;
-}
-function getArticleDiv(title, html) {
-    const articleWrapper = document.createElement("div");
-    articleWrapper.id = getSafeTitle(title);
-    articleWrapper.innerHTML = html;
+
+function getArticleDiv(html) {
+    const articleWrapper = document.createElement("div");    articleWrapper.innerHTML = html;
     articleWrapper.appendChild(document.createElement("hr"));
     articleWrapper.classList.add("article");
     return articleWrapper;
 }
-function getSafeTitle(title) {
-    title = title.replace(/\s/g, "_");
-    title = title.replace(/&/g, "n");
-    return encodeURIComponent(title);
-}
+
+
+/**
+ * @param {string} fileDir
+ */
 async function getArticleHtml(fileDir) {
+    if (!fileDir.endsWith(".html")){
+        fileDir += ".html";
+    }
     const response = await fetch("./articles/" + fileDir);
     if (response.status === 200) {
         const html = await response.text();
@@ -49,19 +33,26 @@ async function getArticleHtml(fileDir) {
         return "";
     }
 }
-async function loadArticle(title) {
-    console.log("Loading", title)
-    const articleDiv = document.getElementById("articles");
-    if (!articleDiv) {
+
+async function loadArticle(fileDir) {
+    console.log("Loading", fileDir)
+    if (!fileDir){
+        console.log("Nav home");
+        navigateHome();
         return;
     }
-    const articleEntry = articleList.find(x => getSafeTitle(x.name) === title);
-    if (!articleEntry) {
-        navigateHome();
+    const articleDiv = document.getElementById("articles");
+    if (!articleDiv) {
+        console.log("No Articles???");
+        return;
     }
-    const html = await getArticleHtml(articleEntry.file);
-    const articleWrapper = getArticleDiv(articleEntry.name, html);
-    articleWrapper.id = title;
+    // const articleEntry = articleList.find(x => getSafeTitle(x.name) === title);
+    // if (!articleEntry) {
+    //     navigateHome();
+    // }
+    const html = await getArticleHtml(fileDir);
+    const articleWrapper = getArticleDiv(html);
+    articleWrapper.id = fileDir;
     articleWrapper.innerHTML = html;
     articleDiv.innerText = "";
     articleDiv.appendChild(articleWrapper);
@@ -90,4 +81,7 @@ window.addEventListener("hashchange", () => {
         navigateHome();
     }
 });
-main();
+
+document.addEventListener("DOMContentLoaded", () => {
+    main();
+});

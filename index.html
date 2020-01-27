@@ -4,6 +4,7 @@
 <head>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script> -->
   <link rel="stylesheet" href="./css/site.css">
+  <link rel="stylesheet" href="./css/header.css">
   <!-- <link rel="stylesheet" href="./libs/prism.css"> -->
   <script src="./js/main.js" type="module"></script>
   <script src="./js/list.js" type="module"></script>
@@ -28,19 +29,24 @@
 </head>
 
 <body>
-  <div >
+  <div>
     <div class="main-header">
-      <a href="/#/"><img src="./images/World_of_Crucible_Banner_Text.png" alt="World of Crucible"></a>
+      <div><a href="/#/"><img src="./images/World_of_Crucible_Banner_Text.png" alt="World of Crucible"></a></div>
+      <div class="top-options">
+        <ul>
+          <li><a href="/#/History">History</a></li>
+        </ul>
+      </div>
     </div>
     <div id="landing">
       <div class="image-box">
         <img class="center-fit" src="./images/bg-cropped.jpg" alt="Crucible">
       </div>
-      <div>
+      <div class="main-text landing-text">
         <p>Welcome to the world of Crucible!</p>
         <p>To get started, first read <a href="#/Welcome">Welcome to Crucible</a>. Then start reading some of the
           history documents. </p>
-        <p>I'm trying to keep all this short and sweet. :)</p>
+        <p>I'm trying to keep all this short and sweet, so it's not a lore overload 😀</p>
       </div>
     </div>
     <div style="display: none" id="article-wrap">

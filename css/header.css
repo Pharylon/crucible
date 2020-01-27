@@ -1,0 +1,31 @@
+.main-header{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  /* border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 3px;
+  border-color: black;
+  border-style: solid; */
+}
+
+.main-header > img{
+  max-width: 100%;
+}
+
+.top-options{
+  margin: auto;
+}
+
+.top-options > ul{
+  list-style-type: none;
+  list-style: none;
+  font-size: 1.5em;
+}
+
+.top-options a {
+  color: rgb(56, 56, 56);
+}
