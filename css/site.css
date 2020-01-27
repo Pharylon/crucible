@@ -1,0 +1,103 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 1.1em;
+}
+
+.image-box {
+    display: grid;
+    height: 100%;
+}
+.center-fit {
+    width: 100%;
+    margin: auto;
+    border: 0px;
+}
+
+.main-header{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    color: whitesmoke;
+    margin: auto;
+    /* border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 3px;
+    border-color: black;
+    border-style: solid; */
+}
+
+.main-header > img{
+    max-width: 100%;
+}
+
+.main-text{
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 700px;
+    background-color: white;
+}
+
+#article-wrap{
+    background-color: rgb(73, 72, 72);
+    border: 1px solid transparent;
+    background-image: url("../images/bg-cropped.jpg");
+    background-size: cover;
+}
+
+#articles{
+    margin-top: 20px;
+    border: 1px solid rgba(255, 0, 0, 0);
+    background-color: rgb(252, 252, 252);
+    padding: 5px 10px 5px 10px;
+}
+
+
+
+@media (orientation: landscape) {
+    .main-text{
+        margin: auto;
+        max-width: 700px;
+    }   
+}
+
+
+
+/* html{
+    margin:0px;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 120%;
+}
+
+.main-img{
+    width: 80vw;
+}
+
+.main{
+    background-color: white;
+    min-height: 100%;
+}
+
+@media (orientation: landscape) {
+    .main{
+        margin: auto;
+        max-width: 700px;
+    }   
+}
+
+
+
+.menu{
+    background-color: white;
+    position: fixed;
+} */
