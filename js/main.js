@@ -1,4 +1,15 @@
 import { hideMenu } from "./menu-button.js";
+
+function getPathRoot(){
+    let pathRoot = "/";
+    pathRoot = window.location.pathname;
+    if (!pathRoot.endsWith("/")){
+        pathRoot += "/";
+    }
+    return pathRoot;    
+}
+
+
 async function main() {
     if (window.location.hash && window.location.hash.length > 1) {
         await loadFromHash();
@@ -65,7 +76,8 @@ async function loadFromHash() {
 }
 function navigateHome() {
     const articleDiv = document.getElementById("articles");
-    window.history.pushState({}, "", "/#/");
+    const pathRoot = getPathRoot();
+    window.history.pushState({}, "", `${pathRoot}#/`);
     document.getElementById("landing").style.display = "block";
     articleDiv.innerText = "";
     document.getElementById("article-wrap").style.display = "none";
