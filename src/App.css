@@ -1,0 +1,63 @@
+html,body, .root, .app {
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  overflow-y: auto;
+}
+
+body{
+  font-size: 1.1em;
+
+}
+
+.image-box {
+  display: grid;
+  height: 100%;
+}
+.center-fit {
+  width: 100%;
+  margin: auto;
+  border: 0px;
+}
+
+
+.main-text{
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  margin: auto;
+  font-size: 1.1em;
+}
+
+.landing-text{
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 800px) and (orientation: landscape) {
+  .main-text{
+      max-width: 700px;
+  }   
+}
+
+
+
+.article-wrap{
+  background-color: rgb(73, 72, 72);
+  border: 1px solid transparent;
+  background-image: url("./images/bg-cropped.jpg");
+  background-size: cover;
+  min-height: calc(100vh - 145px);
+}
+
+.articles{
+  margin-top: 20px;
+  border: 1px solid rgba(255, 0, 0, 0);
+  background-color: rgb(252, 252, 252);
+  padding: 10px 2em 10px 2em;
+
+}
+
+
