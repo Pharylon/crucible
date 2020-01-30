@@ -24,7 +24,9 @@ const Header: React.FC<IHeader> = (props: IHeader) => {
         </Link>
       </div>
       <div className="small-header" onClick={() => props.setVisible(true)}>
-          <img src={banner} alt="World of Crucible" />
+          {
+            !props.visible && (<img src={banner} alt="World of Crucible" />)
+          }
       </div>
       <div id="flyoutMenu" onClick={() => props.setVisible(!props.visible)}
         className={props.visible ? "show" : "hide"}>

@@ -2,9 +2,10 @@
   margin-top: 0px;
   margin-bottom: 0px;
   width: 100%;
-  margin: auto;
+  margin: 0;
   display: flex;
-
+  position: sticky;
+  top: 0;
   /* border-top: 0px;
   border-left: 0px;
   border-right: 0px;
@@ -22,7 +23,8 @@
 }
 
 .top-options{
-  margin: auto;
+  margin-left: auto;
+  margin-right: 20px;
 }
 
 .top-options > ul{
@@ -32,7 +34,7 @@
 }
 
 .top-options a {
-  color: rgb(56, 56, 56);
+  color: rgb(218, 218, 218);
 }
 
 
@@ -89,13 +91,21 @@
   .top-options {
     display: none;
   }  
-}
-
-@media screen and (orientation: portrait), (max-width: 700px) {
   .big-header {
     display: none;
-  }  
+  } 
+  .main-header{
+    background-color: rgba(0, 0, 0, 0.747);
+  }
 }
+
+@media screen and (orientation: portrait), (max-width: 1700px) {
+  .main-header{
+    background-color: rgba(0, 0, 0, 0.747);
+  }
+}
+
+
 
 @media screen and (orientation: landscape) and (min-width: 700px) {
   .small-header {

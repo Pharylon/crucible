@@ -15,18 +15,17 @@ const App: React.FC = () => {
   return (
     <Router>
       <div className="app">
-        <Header visible={menuVisible} setVisible={setVisible} />
-        <ScrollToTop />
-          <div style={{display: (menuVisible ? "none" : "")}}>
-            <Switch>
-              <Route exact path ="/">
-                <Home/>
-              </Route>
-              <Route path ="/">
-                <Page/>
-              </Route>
-            </Switch>
-          </div>
+        <div>
+          <Header visible={menuVisible} setVisible={setVisible} />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/">
+              <Page />
+            </Route>
+          </Switch>
+        </div>
       </div>
     </Router>
   );
