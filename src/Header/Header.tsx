@@ -14,6 +14,7 @@ const Header: React.FC<IHeader> = (props: IHeader) => {
   const links: Array<{ name: string, to: string }> = [
     { name: "History", to: "/history" },
     { name: "Religion", to: "/religion" },
+    { name: "Places", to: "/places" },
   ];
 
   return (

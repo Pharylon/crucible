@@ -4,6 +4,7 @@ import {
   Route,
 } from "react-router-dom";
 import MarkdownArticle from "./MarkdownArticle";
+import Places from "./Places";
 
 const Page: React.FC = () => {
   return (
@@ -24,6 +25,18 @@ const Page: React.FC = () => {
           </Route>
           <Route path="/oldWays">
             <MarkdownArticle file="oldWays.txt" />
+          </Route>
+          <Route path="/places">
+            <Places />
+          </Route>
+          <Route path="/blackport">
+            <MarkdownArticle file="blackport.txt" />
+          </Route>
+          <Route path="/arandor">
+            <MarkdownArticle file="arandor.txt" />
+          </Route>
+          <Route path="/Crucible">
+            <MarkdownArticle file="crucible.txt" />
           </Route>
         </Switch>
       </div>
