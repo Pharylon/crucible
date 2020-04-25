@@ -3,7 +3,6 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import MarkdownArticle from "./MarkdownArticle";
 import Places from "./Places";
 import Arandor from "./Arandor";
 import History from "./History";
@@ -13,6 +12,8 @@ import WorldSmith from "./Worldsmith";
 import OldWays from "./OldWays";
 import Religion from "./Religion";
 import Welcome from "./Welcome";
+import Grelan from "./Grelan";
+import ScrollToTop from "../ScrollToTop";
 
 const Page: React.FC = () => {
   return (
@@ -45,6 +46,9 @@ const Page: React.FC = () => {
           </Route>
           <Route path="/Crucible">
             <Crucible/>
+          </Route>
+          <Route path="/Grelan">
+            <Grelan/>
           </Route>
         </Switch>
       </div>

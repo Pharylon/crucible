@@ -1,5 +1,4 @@
 import React from "react";
-import bgCropped from "./images/bg-cropped.jpg";
 import { Link } from "react-router-dom";
 
 

@@ -68,7 +68,7 @@ body{
 
 
 .article-wrap{
-  border: 1px solid transparent;
+  border: 0px 1px 1px 1px solid transparent;
 }
 
 .articles{
@@ -87,4 +87,14 @@ body{
 
 .articles p{
   margin-top: 10px;
+}
+
+
+
+.auto-image{
+  max-width: 100%;
+}
+
+.spaced-list li{
+  margin-bottom: 20px;
 }

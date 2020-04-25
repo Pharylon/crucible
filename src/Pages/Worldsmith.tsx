@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const WorldSmith = () => {
   return (
@@ -21,7 +22,7 @@ const WorldSmith = () => {
 
 </p>
       <p>
-        The Worldsmith supplanted the worship of the polytheistic religion of the <a href="./oldWays">Old Ways</a>.
+        The Worldsmith supplanted the worship of the polytheistic religion of the <Link to="/oldWays">Old Ways</Link>.
 
 </p>
 
@@ -32,7 +33,7 @@ const WorldSmith = () => {
 
 </p>
       <p>
-        Not long before the Seven Year Winter (see <a href="/history">History</a>), a silversmith named Justinia was apprenticing among the dwarves, and was struck by the sensibility of it. She took the religion farther, though, and believed that the Worldsmith had made all of creation as a kind of crucible to test his followers. When she returned to her home city of Esa in the second year of the Seven Year Winter, she found a people looking for answers. The priests’ usual prayers and exhortations did nothing to warm the world again, and the people despaired that their gods had forsaken them. Justinia had the answer. There is but one God, and he was angry. The Worldsmith, the one true Divinity, had created this world as a crucible for his people, to forge them through trials and tribulations into better people. Yet his creations had allowed themselves to be corrupted, to be ruled over by fell humanoids. The Worldsmith was angry.
+        Not long before the Seven Year Winter (see <Link to="/history">History</Link>), a silversmith named Justinia was apprenticing among the dwarves, and was struck by the sensibility of it. She took the religion farther, though, and believed that the Worldsmith had made all of creation as a kind of crucible to test his followers. When she returned to her home city of Esa in the second year of the Seven Year Winter, she found a people looking for answers. The priests’ usual prayers and exhortations did nothing to warm the world again, and the people despaired that their gods had forsaken them. Justinia had the answer. There is but one God, and he was angry. The Worldsmith, the one true Divinity, had created this world as a crucible for his people, to forge them through trials and tribulations into better people. Yet his creations had allowed themselves to be corrupted, to be ruled over by fell humanoids. The Worldsmith was angry.
 
 </p>
       <p>
@@ -70,7 +71,7 @@ const WorldSmith = () => {
 
 </p>
       <p>
-        However, followers are instructed not to pray directly to the patrons. Even a short thanks to Avandra for luck is dangerously close to crossing the line. Praying directly to the patrons smacks of the <a href="./oldWays">Old Ways</a>.
+        However, followers are instructed not to pray directly to the patrons. Even a short thanks to Avandra for luck is dangerously close to crossing the line. Praying directly to the patrons smacks of the <Link to="/oldWays">Old Ways</Link>.
 
 </p>
 

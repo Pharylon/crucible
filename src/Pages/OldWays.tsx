@@ -28,7 +28,7 @@ const OldWays = () => {
 
 </p>
 			<p>
-				The Old Ways had no moment of founding or single prophet, and evolved over many years, it’s origin lost in antiquity. However, despite this hodgepodge development, it was the only belief system in the world before the <a href="./woldSmith">Church</a>.
+				The Old Ways had no moment of founding or single prophet, and evolved over many years, it’s origin lost in antiquity. However, despite this hodgepodge development, it was the only belief system in the world before the <Link to="/worldSmith">Church</Link>.
 
 </p>
 			<p>

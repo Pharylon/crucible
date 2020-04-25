@@ -14,7 +14,8 @@ const App: React.FC = () => {
   const [menuVisible, setVisible] = useState(false);
   return (
     <Router>
-      <div className="app">
+      <ScrollToTop/>
+      <div id="app" className="app">
         <div>
           <Header visible={menuVisible} setVisible={setVisible} />
           <Switch>

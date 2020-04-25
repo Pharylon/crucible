@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css";
 import banner from "../images/World_of_Crucible_Banner_Text.png";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 interface IHeader {
   visible: boolean;

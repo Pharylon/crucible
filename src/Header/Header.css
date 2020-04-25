@@ -12,6 +12,7 @@
   border-bottom: 3px;
   border-color: black;
   border-style: solid; */
+  background-color: rgba(0, 0, 0, 0.747);
 }
 
 .main-header > img{
@@ -94,9 +95,6 @@
   .big-header {
     display: none;
   } 
-  .main-header{
-    background-color: rgba(0, 0, 0, 0.747);
-  }
 }
 
 @media screen and (orientation: portrait), (max-width: 1700px) {

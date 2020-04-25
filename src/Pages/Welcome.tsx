@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Welcome = () => {
   return (
@@ -10,7 +11,7 @@ const Welcome = () => {
 
 </p>
       <p>
-        Welcome to the world of Crucible. The Synod teaches us that there is but one god, the <a href="./woldSmith">Worldsmith</a>, and They have created this world to forge it's people's souls into more perfect beings. It is by overcoming the peril and dangers of the world that one becomes purer, stronger. Just as a blacksmith's crucible burns away the impurities of metal, so does the world of Crucible burn away the impurities of the soul.
+        Welcome to the world of Crucible. The Synod teaches us that there is but one god, the <Link to="/worldSmith">Worldsmith</Link>, and They have created this world to forge it's people's souls into more perfect beings. It is by overcoming the peril and dangers of the world that one becomes purer, stronger. Just as a blacksmith's crucible burns away the impurities of metal, so does the world of Crucible burn away the impurities of the soul.
 
 </p>
       <p>
