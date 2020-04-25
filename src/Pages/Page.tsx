@@ -5,6 +5,14 @@ import {
 } from "react-router-dom";
 import MarkdownArticle from "./MarkdownArticle";
 import Places from "./Places";
+import Arandor from "./Arandor";
+import History from "./History";
+import Blackport from "./Blackport";
+import Crucible from "./Crucible";
+import WorldSmith from "./Worldsmith";
+import OldWays from "./OldWays";
+import Religion from "./Religion";
+import Welcome from "./Welcome";
 
 const Page: React.FC = () => {
   return (
@@ -12,31 +20,31 @@ const Page: React.FC = () => {
       <div className="main-text articles">
         <Switch>
           <Route path="/history">
-            <MarkdownArticle file="history.txt" />
+            <History />
           </Route>
           <Route path="/religion">
-            <MarkdownArticle file="religion.txt" />
+            <Religion/>
           </Route>
           <Route path="/welcome">
-            <MarkdownArticle file="welcome.txt" />
+            <Welcome/>
           </Route>
-          <Route path="/woldSmith">
-            <MarkdownArticle file="worldSmith.txt" />
+          <Route path="/worldSmith">
+            <WorldSmith />
           </Route>
           <Route path="/oldWays">
-            <MarkdownArticle file="oldWays.txt" />
+            <OldWays />
           </Route>
           <Route path="/places">
             <Places />
           </Route>
           <Route path="/blackport">
-            <MarkdownArticle file="blackport.txt" />
+            <Blackport />
           </Route>
           <Route path="/arandor">
-            <MarkdownArticle file="arandor.txt" />
+            <Arandor />
           </Route>
           <Route path="/Crucible">
-            <MarkdownArticle file="crucible.txt" />
+            <Crucible/>
           </Route>
         </Switch>
       </div>
