@@ -17,7 +17,7 @@ const History = () => {
         What is known for sure is that nearly a thousand years ago, the human kingdom of Zelath rose up in the Northeast,
         expanding and bringing others under it’s sway so that even the dwarves and elves swore fealty to it. It’s borders
         ever-expanding, Zelath eventually came into contact with the Ixalga, a nation of goblinoids expanding from the
-        distant South. The two came into conflict, but the Ixalga had the superior army. Early campaigns did not go well
+        distant North. The two came into conflict, but the Ixalga had the superior army. Early campaigns did not go well
         for Zelath, and in desperation the human kings made a pact with Asmodeus himself. With his demonic magic, they
         turned the tide. The armies of Zelath and it’s allies fought back the Ixalga and reclaimed much of their lost land.
         The war stretched out over generations, with only small lapses in the fighting, and became known as the Forever War.

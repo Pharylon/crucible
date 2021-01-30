@@ -21,7 +21,6 @@ const Blackport = () => {
         Today Blackport is ruled by Duke Francis Tachivello. He took the throne about 15 years ago when his father, 
         the previous Duke, died in the attack on Esa. Francis was only 16 at the time, and pushed hard for an isolationist 
         stance. With the fall of the Empire, he wanted to pull back and protect Arandor and Blackport, not send armies off to other lands.
-
       </p>  
 
       <p>
